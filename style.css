@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.calc {
+    width: 300px;
+    height: 500px;
+    background: #121212;
+    border: 5px solid #3806c0;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(20, 20, 177, 0.2);
+    margin: 50px auto;
+    color: #fff;
+    padding: 18px;
+}
+
+.calc__screen {
+    display: flex;
+    height: 125px;
+    padding: 10px;
+    justify-content: right;
+    margin-bottom: 20px;
+    
+
+}
+
+.calc__screen p {
+    height: 100%;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+.calc__buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent divide"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two tree plus"
+    "zero zero dot equal";
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.btn.zero{
+    grid-area: zero;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: rgb(80, 79, 79);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.pink-btn{
+    background: rgb(248, 29, 219);
+}
+
+.purple-btn {
+    background: #3806c0;
+}
+
+.btn:hover{
+    filter: brightness(120%);
+    transition:all 0.2s easy-in;
+}
+
+.btn:active{
+    filter: brightness(90%);
+    transition:all 0.2s easy-in;
+}
+
